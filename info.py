@@ -22,7 +22,7 @@ USERNAME = environ.get('USERNAME', "http://t.me/EpicfilestoreBot")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003701224365'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+bnebtGcyeOs2YjU1')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001234567898').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Kingkishan:22996@cluster0.jpobaxp.mongodb.net/?appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Kingkishan:22996@cluster0.jpobaxp.mongodb.net?retryWrites=true&w=majority")
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
